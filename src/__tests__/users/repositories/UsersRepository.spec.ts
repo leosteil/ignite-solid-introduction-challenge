@@ -62,6 +62,8 @@ describe("UsersRepository", () => {
 
     const findUser = usersRepository.findByEmail(user.email);
 
+    console.log(findUser);
+
     expect(findUser).toMatchObject({
       name: user.name,
       email: user.email,
